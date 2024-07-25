@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Normal/Geometria.woff2') format('woff2'),
+        url('../fonts/Normal/Geometria.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Medium/Geometria-Medium.woff2') format('woff2'),
+        url('../fonts/Medium/Geometria-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header_wrapper {
+    column-gap: 289px;
+    padding: 43px 0;
+    background: transparent;
+    z-index: 1000;
+    position: relative;
+}
+
+.header_nav ul {
+    display: flex;
+    column-gap: 54px;
+    z-index: 1000;
+}
+
+.header_nav ul>li>a {
+    z-index: 1000;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fefefe;
+    font-weight: 500;
+    font-family: "Geometria";
+}
+
+.wrapper {
+    max-width: 1400px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.left hr {
+    width: 3px;
+    height: 126px;
+    background-color: #00ccff;
+    border: none;
+}
+
+.ad {
+    padding-top: 290px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    column-gap: 25px;
+    z-index: 999;
+}
+
+.left p {
+    font-size: 70px;
+    line-height: 74px;
+    color: #1a1a1a;
+    font-weight: 500;
+    font-family: 'Geometria';
+}
+
+.left span {
+    font-size: 35px;
+    letter-spacing: 4px;
+    line-height: 91px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Geometria";
+    -webkit-text-stroke-color: #0099ff;
+    -webkit-text-stroke-width: 1px;
+}
+
+.right {
+    position: absolute;
+    right: 0;   
+    top: 0;
+    z-index: 1;
+}
+
+.macbook {
+    z-index: 5000;
+    position: absolute;
+    right: 156px;
+    top: 142px;
+}
+
+.header_nav ul>li>a {
+    position: relative;
+}
+
+.header_nav ul>li>a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0%;
+    height: 2px;
+    background-color: #fefefe;
+    transition: all .5s ease;
+}
+
+.header_nav ul>li>a::before {
+    bottom: -1px; 
+}
+
+.header_nav ul>li:hover > a::before {
+    width: 100%;    
+}
