@@ -29,12 +29,20 @@ a {
     text-decoration: none;
 }
 
+.flex {
+    display: flex;
+}
+
 .header_wrapper {
-    column-gap: 289px;
     padding: 43px 0;
     background: transparent;
     z-index: 1000;
     position: relative;
+    align-items: center;
+}
+
+.header_nav {
+    align-items: center;
 }
 
 .header_nav ul {
@@ -59,6 +67,12 @@ a {
     margin: 0 auto;
 }
 
+.logo {
+    width: 166px;
+    height: 22px;
+    padding-right: 170px;
+}
+
 .left hr {
     width: 3px;
     height: 126px;
@@ -71,14 +85,19 @@ a {
 }
 
 .left {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
-    max-width: 800px;
+    max-width: 750px;
     column-gap: 25px;
     z-index: 999;
 }
 
-.left p {
+.main-text {
+    padding-left: 25px;
+    position: absolute;
+    top: 385px;
+    max-width: 720px;
     font-size: 70px;
     line-height: 74px;
     color: #1a1a1a;
@@ -88,11 +107,10 @@ a {
 
 .left span {
     font-size: 35px;
-    letter-spacing: 4px;
     line-height: 91px;
     color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
     font-family: "Geometria";
     -webkit-text-stroke-color: #0099ff;
     -webkit-text-stroke-width: 1px;
@@ -100,7 +118,7 @@ a {
 
 .right {
     position: absolute;
-    right: 0;   
+    right: 0;
     top: 0;
     z-index: 1;
 }
@@ -128,9 +146,104 @@ a {
 }
 
 .header_nav ul>li>a::before {
-    bottom: -1px; 
+    bottom: -1px;
 }
 
-.header_nav ul>li:hover > a::before {
-    width: 100%;    
+.header_nav ul>li:hover>a::before {
+    width: 100%;
+}
+
+.icons_ul {
+    display: flex;
+    column-gap: 39px;
+    max-width: 169px;
+}
+
+.icons ul li>a {
+    display: block;
+    background: url(../img/Sprite.png) no-repeat;
+}
+
+.fb a::before {
+    background-position: -1px -2px;
+    width: 11px;
+    height: 21px;
+}
+
+.tw a:before {
+    width: 24px;
+    height: 19px;
+    background-position: -14px -2px;
+}
+
+.inst a:before {
+    background-position: -40px -2px;
+    width: 19px;
+    height: 20px;
+}
+
+.in a:before {
+    background-position: -62px 0;
+    width: 21px;
+    height: 21px;
+}
+
+.fb:hover>a::before {
+    background-position: -1px -23px;
+    width: 11px;
+    height: 21px;
+}
+
+.tw:hover>a:before {
+    width: 24px;
+    height: 19px;
+    background-position: -14px -23px;
+}
+
+.inst:hover>a:before {
+    background-position: -40px -23px;
+    width: 19px;
+    height: 20px;
+}
+
+.in:hover>a:before {
+    background-position: -62px -23px;
+    width: 21px;
+    height: 21px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: block;
+    position: relative;
+}
+
+.icon:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: url(../img/Sprite.png) no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -21px;
+    transition: all .4s ease;
+}
+
+.subtext {
+    padding-top: 32px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #2b2b2b;
+    font-family: "Geometria";
+}
+
+.buttons a {
+    padding: 12px 64px;
+    max-height: 53px;
+    border-radius: 26px;
+    background-color: #0099ff;
 }
