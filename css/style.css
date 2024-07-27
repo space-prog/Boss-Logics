@@ -74,16 +74,27 @@ a {
     background: url(../img/bg2.svg) no-repeat center/cover;
 }
 
-.main-bg-blue1 {
-    width: 90vw;
-    height: 75vw;
-    left: 0;
+.main {
+    position: relative;
+}
+
+.main-bg-blue1,
+.main-bg-blue2 {
+    background: url(../img/bg2.svg) no-repeat center/95%;
+    display: block;
+    position: absolute;
+    width: 40vw;
+    height: 42vw;
+    left: -150px;
     top: 20px;
+}
+
+.main-bg-blue2 {
+    background-size: 72%;
 }
 
 .main-block-ring {
     min-height: 90vh;
-    position: relative;
 }
 
 .flex {
@@ -152,7 +163,8 @@ a {
     transform: translateY(-15%);
 }
 
-.main-text::before {
+.main-text::before,
+.main-text-1::before {
     content: "";
     position: absolute;
     top: 0;
@@ -338,6 +350,8 @@ a {
 }
 
 .ring {
+    top: 110px;
+    left: -25px;
     position: absolute;
 }
 
@@ -357,12 +371,13 @@ a {
 }
 
 .subtext-1 {
-    position: absolute;
-    max-width: 630rem;
+    display: block;
+    width: 43vw;
     font-size: 18rem;
     line-height: 26rem;
     color: #2b2b2b;
     font-family: "Geometria";
+    position: relative;
 }
 
 .grid_column {
@@ -372,4 +387,53 @@ a {
 
 .ad {
     padding: 150rem 0;
+}
+
+.right1 {
+    padding-top: 170px;
+    display: block;
+    right: -30%;
+    position: absolute;
+}
+
+.subtext-1,
+.main-text-1 {
+    position: relative;
+}
+
+.subtext-1 {
+    max-width: 33vw;
+}
+
+.subtext-1 {
+    padding-top: 32rem;
+    font-size: 18rem;
+    line-height: 26rem;
+    color: #2b2b2b;
+    font-family: "Geometria";
+}
+
+.right-1_button {
+    padding: 12rem 44rem;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Geometria";
+    background-color: #000;
+    color: #fff;
+    height: 53rem;
+    border-radius: 26rem;
+    width: 242px;
+    background-color: #0099ff;
+    transition: all .4s ease;
+    border: solid 2px #0099ff;
+}
+
+.right-1_button:hover {
+    color: #000;
+    border: solid 2px #0099ff;
+    background-color: #fff;
 }
