@@ -9,65 +9,68 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="wrapper header_wrapper flex-between">
-            <img src="img/logo.png" alt="logo" class="logo">
-            <nav class="header_nav flex-between">
-                <ul>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">together</a></li>
-                    <li><a href="#">Customers</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <nav class="icons">
-                <ul class="icons_ul">
-                    <li>
-                        <p class="fb"><a href="#" class="icon"></a></p>
-                    </li>
-                    <li >
-                        <p class="tw"><a href="#" class="icon"></a></p>
-                    </li>
-                    <li>
-                        <p class="inst"><a href="#" class="icon"></a></p>
-                    </li>
-                    <li>
-                        <p class="in"><a href="#" class="icon"></a></p>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="right">
-        <img src="img/bg_1.png" alt="">
-    </div>
-    <p class="macbook"><img src="img/Macbook_-removebg-preview.png" alt=""></p>
-    <div class="ad">
-        <div class="wrapper">
-            <div class="left">
-                <hr>
-                <p class="main-text">Software that works the way you do <span>(Really)</span></p>
-                <p class="subtext">Simplify, transform, and automate your product creation, sales, and management with BOSS Logi-cs—so you can get products to market faster and more effectively.</p>
-                <div class="buttons">
-                    <a href="#" class="but1">Get Started</a>
-                    <a href="#" class="but2">Learn More</a>
+    <div class="hidden">
+        <header class="header">
+            <span class="bg1 bg"></span>
+            <span class="bg2 bg"></span>
+            <span class="bg3 bg"></span>
+            <div class="wrapper header_wrapper flex-between">
+                <a href="index.html">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 22" width="166" height="22"><defs><clipPath clipPathUnits="userSpaceOnUse" id="cp1"><path d="m-255-43h1920v5874h-1920z"/></clipPath><image  width="69" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAWCAMAAAChSaFCAAAAAXNSR0IB2cksfwAAAklQTFRFGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoattCBigAAAMN0Uk5Tydza2dKvbRoANpjY9P3437RVG3/u8uC+cyUNcMzr9+XBgzX/6kB0+6gZS+z6jAU725cU+UEHoOISEbsLDuHp0GKzxPZDAYn1aNTXK67I/jM040n85mDWBldWLL0MboVlvw83TTkxEBYueWdxHcDDAoZOA/BCo37dWy2yUO2OjRWtHIcEXLDOb3gIxaqVxnynZtPnF1O5X95FiIQhe9EJgEwfT++xdVojn2koyjJk80omOIGbd3Ksy82W8bhRmilEkZI/+F2wMAAAA31JREFUeJxtVHlQjVEUP0ePVwxSKUs1Jo1MTdEyD5FlGJJJRPMykz/waCqitBilLDGYsYz0yJQpiSFZCmkGSbZshV7GWmmQokVRkyX33Pu9dZw/fvfc3z33991z7rkfAiJwQ25gOGHWLREDscOyV05MmyCsyG+1ZvCJhdsMBb0hNvLREX9LTH+so8EJeyTCAvE1G1ywU7tpCNaic5+BClhiDYA7ftMzNlgN4Nnbrmfs8An40Am0NvqhiQrYv2mFyY2GjON9AN8G/XwMYgVMf6cnnPGWULG0RSjvZ0vc+Btgz4XrAhA1FGRe6n93CHNkrhWU/YSr9HmKmIiV7WyPVzEIFe+iIHg/toZKqbgQXEkhk/EchNwjb+pZ5R02+PXKH0wp6wzKZ35YGQPPYVRgzWuWrFAZR2yfgnKdd3zVNdo7P4vBavruAiz5w4ZATQXDgT9pMaKIwZ8mcq1C1UYqwSMvMlx8eN15Wv1IEF3IYOmvAQV0/sbpjZekUsScJVTiW4kQKsu6BmNxtRMlPGvPpjw67mUeR6mYzxuaxyvV7DW78JV0CeJOXD5bz9ipU9GZmyINthxnzqrtNA18yuD7cnVqlrTevKS+lbdLl3ZDx3xMNVVZkQYQe4Y54Sk03VAgVGDHUV2Icj+DJIvbGi3hJ881UWno3ydUIpOMVLyX3KvSxqw99YLh7hgnLRGdaNp16zH+PxlRcYPM0oZLtY0jtBoXkmgniI1CJe6RgpUonfpl2pk5L02rq+ax4S0z85vofcXFSJ9Mx+elRLgKlc1RDNRN2Qw/mBnc9BFWJnbTal0Jyh10a8KO7gB6xHqVyDe1QL0kui4lnMGaK0BdlwnuP2R0NaAqIexuBTh2N5fLjOYqDgOAXoAPvE8ZtJW521TiBQRUPYZsflGJ0QC7MuzD8ZDZanmSOIufStUVMfOA2eyOYq6SfJoNsjYXgJ/89ftnSy1VnyvPo9v8khMG+QnM+eX9NSYexMlPb2E1tOh0VFzkieLJVKM7gn2hJn8G1h8JmmoDovmkklddb8PQYpQRceBGpvFfyuNzNRTkGKr0uEKDuyFxMATNR3rpGdm+pXwsjNX+MdPD6BE7fBqhO8kgSnx58BFd7/5dmInmkOyj9KCZr3XXs1JpxT8iW7Wn0i2tZaWYW53A+v0Nk6KyFjkHcMJ9L7akb8iQXb+JcwH+AeqGLoFW1pifAAAAAElFTkSuQmCC"/><image  width="89" height="22" id="img2" href="data:image/png;base64,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"/></defs><style></style><g clip-path="url(#cp1)"><use  href="#img1" x="0" y="0"/><use  href="#img2" x="77" y="0"/></g></svg>
+                </a>
+                <nav class="header_nav flex-between">
+                    <ul>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">together</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="icons">
+                    <ul class="icons_ul">
+                        <li>
+                            <p class="fb"><a href="#" class="icon"></a></p>
+                        </li>
+                        <li >
+                            <p class="tw"><a href="#" class="icon"></a></p>
+                        </li>
+                        <li>
+                            <p class="inst"><a href="#" class="icon"></a></p>
+                        </li>
+                        <li>
+                            <p class="in"><a href="#" class="icon"></a></p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="ad">
+                <div class="wrapper grid_column">
+                    <div class="left">
+                        <p class="main-text">Software that works the way you do <span>(Really)</span></p>
+                        <p class="subtext">Simplify, transform, and automate your product creation, sales, and management with BOSS Logi-cs—so you can get products to market faster and more effectively.</p>
+                        <div class="buttons">
+                            <a href="#" class="but1">Get Started</a>
+                            <a href="#" class="but2">Learn More</a>
+                        </div>
+                    </div>
+                    <p class="macbook"><img src="img/Macbook_-removebg-preview.png" alt=""></p>
                 </div>
             </div>
-        </div>
+        </header>
+        <main class="main">
+            <section class="wrapper main-block-ring">
+                <span class="main-bg-blue1 bg_blue"></span>
+                <span class="main-bg-blue2 bg_blue"></span>
+                <img src="img/Rectangle_7-removebg-preview(1).png" alt="" class="ring">
+                <div class="text">
+                    <p class="main-text-1">Your customers don't have to be in-store for you to be together.</p>
+                </div>
+                <p class="subtext-1">Introducing a virtual in-store experience that sets a new standard for personalized online interactions.</p>
+            </section>
+        </main>
     </div>
-    <main class="main">
-        <div class="wrapper">
-            <img src="img/bg2.png" alt="" class="bg2">
-            <img src="img/Rectangle_7-removebg-preview(1).png" alt="" class="ring">
-            <div class="text">
-                <hr>
-                <p class="main-text-1">Your customers don't have to be in-store for you to be together.</p>
-            </div>
-            <p class="subtext-1">Introducing a virtual in-store experience that sets a new standard for personalized online interactions.</p>
-        </div>
-    </main>
 </body>
 
 </html>
