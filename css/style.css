@@ -245,5 +245,96 @@ a {
     padding: 12px 64px;
     max-height: 53px;
     border-radius: 26px;
+}
+
+.buttons {
+    padding-top: 46px;
+    column-gap: 20px;
+}
+
+.but1 {
+    border: 2px solid #0099ff;
+    margin-right: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Geometria";
     background-color: #0099ff;
+    transition: all .4s ease;
+}
+
+.but1:hover {
+    border: 2px solid #0099ff;
+    color: #000;
+    background-color: #fff;
+}
+
+.but2 {
+    background-color: #fff;
+    border: 2px solid #0099ff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #2b2b2b;
+    font-weight: bold;
+    font-family: "Geometria";
+    transition: all .4s ease;
+}
+
+.but2:hover {
+    background-color: #0099ff;
+    color: #fff;
+}
+
+.bg2 {
+    position: absolute;
+    top: 994px;
+    left: 0;
+}
+
+.ring {
+    position: absolute;
+    left: 155px;
+    top: 130%;
+}
+
+.text {
+    display: flex;
+    padding-top: 460px;
+    padding-left: 511px;
+}
+
+.main-text-1 {
+    padding-left: 24px;
+    position: absolute;
+    max-width: 800px;
+    font-size: 70px;
+    line-height: 74px;
+    color: #1a1a1a;
+    font-weight: 500;
+    font-family: "Geometria";
+}
+
+.subtext-1 {
+    position: absolute;
+    padding-top: 722px;
+    padding-left: 535px;
+    max-width: 630px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #2b2b2b;
+    font-family: "Geometria";
+}
+
+.text hr {
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 212px;
+    background-color: #00ccff;
+    border: none;
 }
