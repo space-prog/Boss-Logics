@@ -164,7 +164,8 @@ a {
 }
 
 .main-text::before,
-.main-text-1::before {
+.main-text-1::before,
+.main-text-2::before {
     content: "";
     position: absolute;
     top: 0;
@@ -355,10 +356,6 @@ a {
     position: absolute;
 }
 
-.text {
-    display: flex;
-}
-
 .main-text-1 {
     padding-left: 24rem;
     position: absolute;
@@ -436,4 +433,59 @@ a {
     color: #000;
     border: solid 2px #0099ff;
     background-color: #fff;
+}
+
+.main-text-2 {
+    padding-left: 24px;
+    position: relative;
+    font-size: 70rem;
+    line-height: 74rem;
+    color: #1a1a1a;
+    font-weight: 500;
+    font-family: 'Geometria';
+}
+
+.advantages {
+    padding-top: 242px;
+    max-width: 1447px;
+}
+
+.text {
+    max-width: 635px;
+}
+
+.name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #0099ff;
+    font-weight: bold;
+    font-family: "Geometria";
+}
+
+.subname {
+    width: 688px;
+    height: 69px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #2b2b2b;
+    font-family: "Geometria";
+}
+
+.text {
+    position: relative;
+}
+
+.advantages .bg_white {
+    display: block;
+    position: absolute;
+    background: url(../img/bg3.svg);
+}
+
+.bg_white1 {
+    width: 90vw;
+    height: 75vw;
+    right: -20%;
+    top: 0;
 }
