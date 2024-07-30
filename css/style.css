@@ -20,6 +20,10 @@ html {
     font-size: 0.8px;
 }
 
+body {
+    background-color: rebeccapurple;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -450,10 +454,6 @@ a {
     max-width: 1447px;
 }
 
-.text {
-    max-width: 635px;
-}
-
 .name {
     font-size: 20px;
     letter-spacing: 2px;
@@ -473,19 +473,52 @@ a {
     font-family: "Geometria";
 }
 
-.text {
+.text2 {
     position: relative;
+    max-width: 635px;
 }
 
-.advantages .bg_white {
+.img .bg_white {
     display: block;
     position: absolute;
-    background: url(../img/bg3.svg);
+    background: url(../img/bg3.svg) no-repeat;
 }
 
 .bg_white1 {
+    background-size: 50%;
+    width: 50vw;
+    height: 45vw;
+    right: -20%;
+    top: 0;
+}
+
+.bg_white2 {
     width: 90vw;
     height: 75vw;
     right: -20%;
-    top: 0;
+    top: -100px;
+}
+
+
+.img .bg_white {
+    display: block;
+    background: url(../img/bg3.svg) no-repeat center/cover;
+}
+
+.text2 {
+    position: relative;
+}
+
+.bg_white1,
+.bg_white2 {
+    background: url(../img/bg3.svg) no-repeat center/95%;
+    display: block;
+    position: absolute;
+    width: 40vw;
+    height: 42vw;
+    top: 20px;
+}
+
+.bg_white2 {
+    background-size: 72%;
 }
