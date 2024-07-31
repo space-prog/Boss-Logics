@@ -20,10 +20,6 @@ html {
     font-size: 0.8px;
 }
 
-body {
-    background-color: rebeccapurple;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -450,8 +446,8 @@ a {
 }
 
 .advantages {
-    padding-top: 242px;
-    max-width: 1447px;
+    padding: 243px 0;
+    position: relative;
 }
 
 .name {
@@ -474,51 +470,46 @@ a {
 }
 
 .text2 {
-    position: relative;
     max-width: 635px;
 }
 
 .img .bg_white {
-    display: block;
     position: absolute;
-    background: url(../img/bg3.svg) no-repeat;
-}
-
-.bg_white1 {
-    background-size: 50%;
-    width: 50vw;
-    height: 45vw;
-    right: -20%;
-    top: 0;
-}
-
-.bg_white2 {
-    width: 90vw;
-    height: 75vw;
-    right: -20%;
-    top: -100px;
-}
-
-
-.img .bg_white {
     display: block;
     background: url(../img/bg3.svg) no-repeat center/cover;
 }
 
-.text2 {
-    position: relative;
+.bg_white1 {
+    width: 30vw;
+    height: 30vw;
+    right: -7%;
+    top: 15%;
+    z-index: 99;
 }
 
-.bg_white1,
 .bg_white2 {
-    background: url(../img/bg3.svg) no-repeat center/95%;
-    display: block;
+    width: 45vw;
+    height: 45vw;
+    right: -26%;
+    top: 0; 
+}
+
+.macbook2 {
+    width: 35vw;
+    height: 35vw;
+    z-index: 100;
     position: absolute;
-    width: 40vw;
-    height: 42vw;
-    top: 20px;
+    top: 8%;
+    right: -8%;
 }
 
-.bg_white2 {
-    background-size: 72%;
+.advantages-flex {
+    align-items: center;
+    column-gap: 90px;
+}
+
+.img {
+    position: relative;
+    width: 40vw;
+    height: 40vw;
 }
