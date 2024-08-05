@@ -20,10 +20,6 @@ html {
     font-size: 0.8px;
 }
 
-body {
-    background-color: rebeccapurple;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -478,7 +474,7 @@ a {
     max-width: 635px;
 }
 
-.img .bg_white {
+.wrapper .bg_white {
     display: block;
     position: absolute;
     background: url(../img/bg3.svg) no-repeat;
